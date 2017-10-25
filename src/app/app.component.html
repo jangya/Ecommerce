@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="row">
+  <h1 class="col-md-12 col-sm-9 col-xs-9">
+    {{title}}
+  </h1>
+  <div class="mob-only col-sm-3 col-xs-3">{{cartLength}} ITEMS</div>
+</div>
+<div class="row not-mob">
+  <div class="col-md-6">
+    {{cartLength}} ITEMS
+  </div>
+  <div class="col-md-2">
+    SIZE
+  </div>
+  <div class="col-md-2">
+    QTY
+  </div>
+  <div class="col-md-2">
+    PRICE
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12" *ngFor="let item of cartData">
+    <div class="row">
+      <div class="col-md-3">
+          <img src="/assets/T1.jpg" class="img-rounded" alt="Cinque Terre">
+      </div>
+      <div class="col-md-3">
+        {{item.p_name}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
