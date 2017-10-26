@@ -1,36 +1,58 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="row">
-  <h1 class="col-md-12 col-sm-9 col-xs-9">
+<section class="row">
+  <h1 class="col-md-12 col-sm-9 col-xs-9 title">
     {{title}}
   </h1>
-  <div class="mob-only col-sm-3 col-xs-3">{{cartLength}} ITEMS</div>
-</div>
-<div class="row not-mob">
-  <div class="col-md-6">
+  <div class="mob-only col-sm-3 col-xs-3 mT20">{{cartLength}} ITEMS</div>
+</section>
+<section class="row not-mob">
+  <div class="col-sm-6">
     {{cartLength}} ITEMS
   </div>
-  <div class="col-md-2">
+  <div class="col-sm-2">
     SIZE
   </div>
-  <div class="col-md-2">
+  <div class="col-sm-2">
     QTY
   </div>
-  <div class="col-md-2">
+  <div class="col-sm-2">
     PRICE
   </div>
-</div>
+</section>
 <hr>
-<div class="row">
+<section class="row">
   <div class="col-md-12" *ngFor="let item of cartData">
     <div class="row">
-      <div class="col-md-3">
-          <img src="/assets/T1.jpg" class="img-rounded" alt="Cinque Terre">
+      <div class="col-sm-3 col-xs-6">
+          <img src="{{item.p_url}}" width=150 height=150 class="img-thumbnail" alt="Product Image">
       </div>
-      <div class="col-md-3">
-        {{item.p_name}}
+      <div class="col-sm-3 col-xs-6">
+        <div>{{item.p_name | uppercase}}</div>
+        <div>Style #: {{item.p_style | uppercase}}</div>
+        <div>Colour: {{item.p_selected_color.name | titlecase}}</div>
+        <div class="mob-only">Size: {{item.p_selected_size.code}}</div>
+        <div class="mob-only">Qty: {{item.p_quantity}}</div>
+        <div class="price mob-only">{{item.p_price |  currency:'USD':true}}</div>
+      </div>
+      <div class="col-sm-2 not-mob">
+        {{item.p_selected_size.code}}
+      </div>
+      <div class="col-sm-2 not-mob">
+        {{item.p_quantity}}
+      </div>
+      <div class="col-sm-2 not-mob price">
+        {{item.p_price |  currency:'USD':true}}
+      </div>
+      <div class="col-sm-offset-3 col-sm-9 col-xs-12">
+        <button class="btn btn-xs btn-link">Edit</button>
+        <span>|</span>
+        <button class="btn btn-xs btn-link">Remove</button>
+        <span>|</span>
+        <button class="btn btn-xs btn-link">Save For Later</button>
       </div>
     </div>
+    <hr>
   </div>
-</div>
+</section>
 
 

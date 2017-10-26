@@ -1,7 +1,7 @@
 .mob-only {
     display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     /* For mobile phones: */
     .mob-only{
         display:block;
@@ -9,4 +9,19 @@
     .not-mob {
         display: none;
     }
+    .title{
+        font-size: 1.3em !important;
+    }
+}
+.title{
+    font-size: 2.3em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.mT20{
+    margin-top:20px;
+}
+.price{
+    font-weight:500;
+    font-size: 1.5em;
 }

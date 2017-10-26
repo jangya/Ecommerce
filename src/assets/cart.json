@@ -5,6 +5,7 @@
          "p_name":"cotton tshirt",
          "p_variation":"solid green",
          "p_style":"ms13kt1906",
+         "p_url":"/assets/T1.jpg",
          "p_selected_color":{  
             "name":"blue",
             "hexcode":"#1169BD"
@@ -57,6 +58,7 @@
          "p_name":"print girls tee",
          "p_variation":"pink rainbow",
          "p_style":"ms13kt1906",
+         "p_url":"/assets/T2.jpg",
          "p_selected_color":{  
             "name":"pink",
             "hexcode":"#F1DDEF"
@@ -109,6 +111,7 @@
          "p_name":"flower pattern shirt",
          "p_variation":"blue",
          "p_style":"ms13kt1906",
+         "p_url":"/assets/T3.jpg",
          "p_selected_color":{  
             "name":"blue",
             "hexcode":"#1169BD"
@@ -161,6 +164,7 @@
          "p_name":"check pattern tshirt",
          "p_variation":"mens red",
          "p_style":"ms13kt1906",
+         "p_url":"/assets/T4.jpg",
          "p_selected_color":{  
             "name":"red",
             "hexcode":""
