@@ -25,3 +25,10 @@
     font-weight:500;
     font-size: 1.5em;
 }
+.qty-input{
+    width:50%;
+}   
+.thick-border{
+    border-width:5px;
+    border-color:#ccc;
+}
